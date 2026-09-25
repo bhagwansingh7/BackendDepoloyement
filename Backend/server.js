@@ -11,6 +11,12 @@ app.get('/',(req,res)=>{
     res.send("hello from server")
 
 })
+app.get('/mydata',(req,res)=>{
+    res.send("mydata")
+})
+app.get('/home',(req,res)=>{
+    res.send(`<h1>hello from server</h1>`)
+})
 
 // app.listen(PORT,()=>{
 //     console.log(`app is running on PORT ${PORT}`)
