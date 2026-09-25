@@ -11,6 +11,12 @@ app.get('/',(req,res)=>{
     res.send("hello from server")
 
 })
+app.get('/post-data',(req,res)=>{
+    res.json({
+        message:'this is me as a friend'
+        
+    })
+})
 app.get('/mydata',(req,res)=>{
     res.send("mydata")
 })
